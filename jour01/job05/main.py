@@ -14,10 +14,11 @@ class Point :
     
     def changerX (self):
         self.x = input("changer la valeur de X ")
-        return self.x
+        return f"Nouvelle Coordonnée X ({self.x})"
 
     def changerY (self):
         self.y = input("changer la valeur de Y ")
+        return f"Nouvelle Coordonnée Y ({self.y})"
     
 point1=Point(12,41)
 
@@ -25,4 +26,4 @@ print(point1.afficherLesPoints())
 print(point1.afficherX())
 print(point1.afficherY())
 print(point1.changerX())
-print(point1.afficherX())
+print(point1.changerY())
