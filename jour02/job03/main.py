@@ -1,4 +1,4 @@
-#!#!/usr/bin/env python3
+#!/usr/bin/env python3
 class Livre:
     def __init__(self, title, author, pageNumber) -> None:
         self.__title = title

@@ -1,29 +1,29 @@
-#!#!/usr/bin/env python3
+#!/usr/bin/env python3
 class Livre:
-    def __init__(self, title, autor, pageNumber) -> None:
-        self.__longueur = title
-        self.__largeur = autor
+    def __init__(self, title, author, pageNumber) -> None:
+        self.__title = title
+        self.__author = author
         self.__pageNumber = pageNumber
 
     @property
     def title(self):
-        return self.__longueur
+        return self.__title
     
     @property
-    def autor(self):
-        return self.__largeur
+    def author(self):
+        return self.__author
     
     @property
     def pageNumber(self):
         return self.__pageNumber
 
-    @autor.setter
-    def autor(self, value):
-        self.__largeur = value
+    @author.setter
+    def author(self, value):
+        self.__author = value
 
     @title.setter
     def title(self,value):
-        self.__longueur = value
+        self.__title = value
 
     @pageNumber.setter
     def pageNumber(self,value):
@@ -33,11 +33,11 @@ class Livre:
             print("Erreur, valeur non prise en charge. Entrer un entier supérieur à zero")
 
 communautéDeLAnneau = Livre("LOTR","Tolkien",768)
-print(communautéDeLAnneau.title,communautéDeLAnneau.autor)
+print(communautéDeLAnneau.title,communautéDeLAnneau.author)
 communautéDeLAnneau.title = "LOTR Communauté de l'anneau"
-communautéDeLAnneau.autor = "J.R.R. Tolkien"
-print(communautéDeLAnneau.title,communautéDeLAnneau.autor)
+communautéDeLAnneau.author = "J.R.R. Tolkien"
+print(communautéDeLAnneau.title,communautéDeLAnneau.author)
 communautéDeLAnneau.pageNumber = 4.5
-print(communautéDeLAnneau.title,communautéDeLAnneau.autor, communautéDeLAnneau.pageNumber)
+print(communautéDeLAnneau.title,communautéDeLAnneau.author, communautéDeLAnneau.pageNumber)
 communautéDeLAnneau.pageNumber = 900
-print(communautéDeLAnneau.title,communautéDeLAnneau.autor, communautéDeLAnneau.pageNumber)
+print(communautéDeLAnneau.title,communautéDeLAnneau.author, communautéDeLAnneau.pageNumber)
