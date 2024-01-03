@@ -39,10 +39,7 @@ class Livre:
 
     
     def verification(self):
-        if self.__available == True:
-            return True 
-        else:
-            return False
+            return self.__available
         
     def emprunter(self):
         if self.verification():
@@ -52,7 +49,7 @@ class Livre:
             print ("livre non disponible")
 
     def rendre(self):
-        if self.verification() == False:
+        if not self.verification():
             print("vous rendez le livre")
             self.__available = True
         else:
