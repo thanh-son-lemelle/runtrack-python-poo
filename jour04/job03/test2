@@ -16,7 +16,7 @@ class Employe( Personne ):
         self.salaire = salaire 
    
     # appeler __init__ de la classe mère (Personne) 
-    Personne.__init__(self, nom, cin) 
+        Personne.__init__(self, nom, cin) 
  
 p=Employe("Ismail", "EE4567", 7000)
 p.afficher()
